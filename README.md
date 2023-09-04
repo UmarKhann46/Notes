@@ -1,2 +1,3 @@
 # Notes
-Study Material Notes 
+Study Material Notes
+Author: UMAR KHAN

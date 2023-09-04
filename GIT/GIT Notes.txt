@@ -1,0 +1,106 @@
+Configuring git
+1. git --version
+2. git config --global user.name "My Name"
+3. git config --global user.email"someone@gmail.com"
+4. git config --list
+
+
+GIT COMMANDS
+1. git clone <-repo-link->
+2. git status : untracked : new files that git doesn't yet track
+		modified : changed
+		staged : filed is ready to be committed
+		unmodified : unchanged
+
+3. git add <-file name->
+4. git commit -m "some message"
+5. git add . (ADD all file)
+6. git push origin main : (upload local repo to remote repo) where main is the branch and 
+			   origin(Default) from wherever we have clone the code
+
+
+
+Init Command
+
+1. git init : To initialize git inside a new project
+2. git remote add origin <- Git project link-> : To add a remote origin repo to new project
+3. git remote -v : To verify remote
+4. git branch : To check branch
+5. git branch -M main : To rename branch
+6. git push -u origin main : To set upstream so that next time we can just use git push
+
+
+
+GENERAL WORKFLOW OF GIT
+1. CREATE GITHUB REPO --> CLONE --> CHANGES --> ADD --> COMMIT --> PUSH
+
+
+
+GIT BRANCH Commands
+1. git branch ( to check branch)
+2. git branch -M main (to rename branch)
+3. git checkout <-branch name-> (to navigate)
+4. git checkout -b <-new branch name-> (to create new branch)
+
+5. git branch -d <-branch name-> (to delete branch)
+
+
+MERGING CODE
+Way 1
+
+1. git diff <-branch name-> : To compare commits,branches, files & more
+2. git merge <-branch name-> : To merge 2 branches
+
+Way 2
+
+Create a PR
+
+
+Pull Command
+
+git pull origin main: Used to fetch and download content from a remote repo
+		      and immediately update the local repo to match that content
+
+
+Resolving Merge Conflicts
+
+An event that takes place when Git is unable to automatically resolve differences
+in between two commits.
+
+
+Undoing Changes
+
+Case 1: staged changes (after doing git add)
+	git reset <-file name->
+	git reset
+
+Case 2: commited changes(for one commit)
+	git reset HEAD~1
+
+
+Case 3: commited changes(for many commits)
+	git reset <-commit hash-> : Reset the commit in git
+	git reset --hard <- commit hash--> : IT will reset to that commit hash in GIT 
+				             as well as in local repo
+
+
+To check LOGS
+1. git log
+
+
+
+FORK
+
+A fork is a new repository that shares code and visibility settings with the original
+"upstream" repository.
+
+Fork is a rough copy
+
+
+
+
+
+
+
+ 
+
